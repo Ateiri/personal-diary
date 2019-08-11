@@ -8,9 +8,12 @@
   "scripts": {
     "start:dev": "webpack-dev-server",
     "lint": "yarn run lint:eslint & yarn run lint:stylelint",
-    "lint:eslint": "eslint --ext .js,.jsx ./src/*",
+    "lint:eslint": "eslint --fix --ext .js,.jsx ./src/*",
     "lint:stylelint": "stylelint ./src/component/**/*.scss",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch",
+    "format": "yarn run format:js",
+    "format:js": "prettier-eslint --write ./src/**/*.js[x]"
   },
   "dependencies": {
     "@material-ui/core": "^4.2.1",

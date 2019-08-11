@@ -16,7 +16,8 @@
     "tsc": "yarn tsc:front && yarn tsc:bff && yarn tsc:api",
     "tsc:front": "yarn workspace @pd/front tsc",
     "tsc:bff": "yarn workspace @pd/bff tsc",
-    "tsc:api": "yarn workspace @pd/api tsc"
+    "tsc:api": "yarn workspace @pd/api tsc",
+    "tsc:watch": "yarn workspace @pd/front tsc:watch & yarn workspace @pd/bff tsc:watch & yarn workspace @pd/api tsc:watch"
   },
   "pre-commit": [
     "lint",
@@ -37,13 +38,16 @@
     "babel-eslint": "^11.0.0-beta.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-no-null": "^1.0.2",
+    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-sort-class-members": "^1.4.0",
     "pre-commit": "^1.2.2",
+    "prettier": "^1.18.2",
     "typescript": "^3.4.5"
   },
   "dependencies": {}

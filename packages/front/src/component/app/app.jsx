@@ -1,6 +1,6 @@
-import { renderRoutes } from 'react-router-config';
+import { renderRoutes } from "react-router-config";
 
-import './app.scss';
+import "./app.scss";
 
 /**
  * @typedef {import('react-router-config').RouteConfig} RouteConfig

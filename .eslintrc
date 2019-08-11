@@ -1,5 +1,5 @@
 {
-  "extends": ["airbnb"],
+  "extends": ["airbnb", "prettier", "prettier/babel", "prettier/react"],
   "parser": "babel-eslint",
   "plugins": ["sort-class-members", "import", "no-null"],
   "rules": {

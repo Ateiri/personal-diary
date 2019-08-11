@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import { createContext } from "react";
 
 /**
  * @typedef {import('./index').FrontConfig} FrontConfig

@@ -8,7 +8,8 @@
   "scripts": {
     "start:dev": "nodemon -e js,jsx,scss --watch '../front/src/*' --watch './src/*' --exec 'node --inspect=8999 -r ./.babel.register.js' ./src/index.js",
     "lint": "eslint --ext .js,.jsx ./src/*",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch"
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.4.4",

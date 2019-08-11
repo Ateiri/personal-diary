@@ -1,10 +1,10 @@
-import { BrowserRouter } from 'react-router-dom';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { renderRoutes } from 'react-router-config';
+import { BrowserRouter } from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom";
+import { renderRoutes } from "react-router-config";
 
-import { routes } from './routes';
-import { ConfigContext } from './global_context';
+import { routes } from "./routes";
+import { ConfigContext } from "./global_context";
 
 /**
  * @typedef {Object} FrontConfig
@@ -19,17 +19,19 @@ import { ConfigContext } from './global_context';
  * @param {FrontConfig} config Global configuration.
  */
 export const renderApp = config => (
-  <ConfigContext.Provider value={config}>{renderRoutes(routes)}</ConfigContext.Provider>
+  <ConfigContext.Provider value={config}>
+    {renderRoutes(routes)}
+  </ConfigContext.Provider>
 );
 
-if (typeof window !== 'undefined') {
-  document.addEventListener('DOMContentLoaded', () => {
+if (typeof window !== "undefined") {
+  document.addEventListener("DOMContentLoaded", () => {
     // @ts-ignore BFF set global configuration.
     const config = window._config;
 
     ReactDOM.hydrate(
       <BrowserRouter>{renderApp(config)}</BrowserRouter>,
-      document.getElementById('app')
+      document.getElementById("app")
     );
   });
 }

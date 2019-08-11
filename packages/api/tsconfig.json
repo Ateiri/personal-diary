@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
+    "module": "none",
+    "moduleResolution": "node",
     "allowJs": true,
     "checkJs": true,
     "noEmit": true,
     "strict": true,
     "esModuleInterop": true
   },
-  "include": ["./src/index.js"],
-  "exclude": ["node_modules"]
-}
+  "include": ["./src/index.js"]
+ }

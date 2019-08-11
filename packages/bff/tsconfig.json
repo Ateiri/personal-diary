@@ -1,21 +1,18 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
+    "module": "none",
+    "moduleResolution": "node",
     "allowJs": true,
     "checkJs": true,
     "noEmit": true,
     "strict": true,
     "esModuleInterop": true,
-    "jsx": "react",
-    "watch": false,
-    "baseUrl": ".",
-    "paths": {
-      "@pd/front/*": ["../front/*"]
-    }
+    "jsx": "react"
   },
-  "files": ["./../../typing/index.d.ts"],
-  "include": ["./src/index.js"],
-  "exclude": ["node_modules", "*.scss"],
-  "compileOnSave": false
+  "include": ["../../typing/ignore_scss.d.ts", "../front/src/index.jsx", "./src/index.js"],
+  "compileOnSave": false,
+  "paths": {
+    "@pd/front/*": ["../front/*"]
+  }
 }
